@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="logo">Grocies</li><br>
+            <li><a href="Home Page.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="#">Products</a>
+            <ul class="dropdown">
+                <li><a href="Dairy Products.html">Dairy Products</a></li>
+                <li><a href="Vegetables.html">Vegetables</a></li>
+                <li><a href="Cosmetics and Skin Care.html">Cosmetics and Skincare</a></li>
+            </ul>
+            </li>
+            <li><a href="Order Page.html">Order Page</a></li>
+            <li><a href="Loyalty Registration.html">Loyalty</a></li>
+        </ul>
+    </nav>
+    <form id="order-form">
+        <h1>ORDER FORM</h1>
+        <!--Fruits-->
+        <div class="section" id="fruits">
+            <fieldset>
+                <legend>Fruits</legend>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <img src="images/order/fruits/apples.jpg" alt="">
+                        <p class="title">Apple</p>
+                        <p class="price">$1.00 / 1kg</p>
+                        <input type="number" id="Apple" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/fruits/banana.jpg" alt="">
+                        <p class="title">Banana</p>
+                        <p class="price">$0.50 / 1kg</p>
+                        <input type="number" id="Banana" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/fruits/orange.jpg" alt="">
+                        <p class="title">Orange</p>
+                        <p class="price">$0.80 / 1kg</p>
+                        <input type="number" id="Orange" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/fruits/grapes.jpg" alt="">
+                        <p class="title">Grapes</p>
+                        <p class="price">$2.50 / 1kg</p>
+                        <input type="number" id="Grapes" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/fruits/mango.jpg" alt="">
+                        <p class="title">Mango</p>
+                        <p class="price">$1.50 / 1kg</p>
+                        <input type="number" id="Mango" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/fruits/watermelon.jpg" alt="">
+                        <p class="title">Watermelon</p>
+                        <p class="price">$2.00 / 1kg</p>
+                        <input type="number" id="Watermelon" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!--Vegetables-->
+        <div class="section" id="vegetables">
+            <fieldset>
+                <legend>Vegetables</legend>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <img src="images/order/veg/carrots.jpg" alt="">
+                        <p class="title">Carrots</p>
+                        <p class="price">1.20 / 1kg</p>
+                        <input type="number" id="Carrot" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/veg/cabbage.jpg" alt="">
+                        <p class="title">Cabbage</p>
+                        <p class="price">$0.90 / 1kg</p>
+                        <input type="number" id="Cabbage" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/veg/tomatoes.jpg" alt="">
+                        <p class="title">Tomato</p>
+                        <p class="price">$1.30 / 1kg</p>
+                        <input type="number" id="Tomato" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/veg/potatoes.jpg" alt="">
+                        <div class="title">Potato</div>
+                        <div class="price">$0.70 / 1kg</div>
+                        <input type="number" id="Potato" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/veg/pumpkin.jpg" alt="">
+                        <p class="title">Pumpkin</p>
+                        <p class="price">$1.00 / 1kg</p>
+                        <input type="number" id="Pumpkin" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/veg/cauliflower.jpg" alt="">
+                        <p class="title">Cauliflower</p>
+                        <p class="price">$1.50 / 1kg</p>
+                        <input type="number" id="Cauliflower" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!--Dairy-->
+        <div class="section" id="dairy">
+            <fieldset>
+                <legend>Dairy Produce</legend>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <img src="images/order/dairy/milk.jpg" alt="">
+                        <p class="title">Milk</p>
+                        <p class="price">$1.20</p>
+                        <input type="number" id="Milk" min="0" step="1" placeholder="0"> qty
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/dairy/cheese.jpg" alt="">
+                        <p class="title">Cheese</p>
+                        <p class="price">$3.00</p>
+                        <input type="number" id="Cheese" min="0" step="1" placeholder="0"> qty
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/dairy/butter.jpg" alt="">
+                        <p class="title">Butter</p>
+                        <p class="price">$2.50</p>
+                        <input type="number" id="Butter" min="0" step="1" placeholder="0"> qty
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/dairy/yoghurt.jpg" alt="">
+                        <p class="title">Yoghurt</p>
+                        <p class="price">$1.00</p>
+                        <input type="number" id="Yogurt" min="0" step="1" placeholder="0"> qty
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/dairy/cream.jpg" alt="">
+                        <p class="title">Cream</p>
+                        <p class="price">$1.50</p>
+                        <input type="number" id="Cream" min="0" step="1" placeholder="0"> qty
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/dairy/curd.jpg" alt="">
+                        <p class="title">Curd</p>
+                        <p class="price">$2.00</p>
+                        <input type="number" id="Curd" min="0" step="1" placeholder="0"> qty
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!--Meat-->
+        <div class="section" id="meat-seafood">
+            <fieldset>
+                <legend>Meat & Seafood</legend>
+                <div class="flex-box">
+                    <div class="flex-item">
+                        <img src="images/order/meat/chicken wings.jpg" alt="">
+                        <p class="title">Chicken Wings</p>
+                        <p class="price">$5.00 / 1kg</p>
+                        <input type="number" id="Wings" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/meat/drumsticks.jpg" alt="">
+                        <p class="title">Chicken Drumsticks</p>
+                        <p class="price">$6.00 / 1kg</p>
+                        <input type="number" id="Drumsticks" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/meat/beef.jpg" alt="">
+                        <p class="title">Beef</p>
+                        <p class="price">$7.00 / 1kg</p>
+                        <input type="number" id="Beef" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/meat/mutton.jpg" alt="">
+                        <p class="title">Mutton</p>
+                        <p class="price">$6.00 / 1kg</p>
+                        <input type="number" id="Mutton" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/meat/lamb.jpg" alt="">
+                        <p class="title">Lamb</p>
+                        <p class="price">$8.00 / 1kg</p>
+                        <input type="number" id="Lamb" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                    <div class="flex-item">
+                        <img src="images/order/meat/prawns.jpg" alt="">
+                        <p class="title">Shrimp</p>
+                        <p class="price">$8.00 / 1kg</p>
+                        <input type="number" id="Shrimp" min="0" step="0.1" placeholder="0"> kg
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <!--Ingredients-->
+        <div class="section" id="baking-cooking">
+            <fieldset>
+            <legend>Cooking & Baking Ingredients</legend>
+            <div class="flex-box">                
+                <div class="flex-item">
+                    <img src="images/order/ingredients/flour (2).jpg" alt="">
+                    <p class="title">Flour</p>
+                    <p class="price">$2.00</p>
+                    <input type="number" id="Flour" min="0" step="1" placeholder="0"> qty
+                </div>
+                <div class="flex-item">
+                    <img src="images/order/ingredients/sugar.webp" alt="" placeholder="0">
+                    <p class="title">Sugar</p>
+                    <p class="price">$1.50</p>
+                    <input type="number" id="Sugar" min="0" step="1" placeholder="0"> qty
+                </div>
+                <div class="flex-item">
+                    <img src="images/order/ingredients/salt.jpg" alt="">
+                    <p class="title">Salt</p>
+                    <p class="price">$0.50</p>
+                    <input type="number" id="Salt" min="0" step="1" placeholder="0"> qty
+                </div>
+                <div class="flex-item">
+                    <img src="images/order/ingredients/oil.jpg" alt="">
+                    <p class="title">Oil</p>
+                    <p class="price">$3.00</p>
+                    <input type="number" id="Oil" min="0" step="1" placeholder="0"> qty
+                </div>
+                <div class="flex-item">
+                    <img src="images/order/ingredients/baking powder.jpg" alt="">
+                    <p class="title">Baking Powder</p>
+                    <p class="price">$1.00</p>
+                    <input type="number" id="Baking Powder" min="0" step="1" placeholder="0"> qty
+                </div>
+                <div class="flex-item">
+                    <img src="images/order/ingredients/vinegar.jpg" alt="">
+                    <p class="title">Vinegar</p>
+                    <p class="price">$1.50</p>
+                    <input type="number" id="Vinegar" min="0" step="1" placeholder="0"> qty
+                </div>
+            </div>
+            </fieldset>
+        </div>
+        <div class="buttons">
+            <button type="button" id="add-to-cart">🛒 Add to Cart</button>
+            <button type="button" id="add-to-favourites">♡  Add to Favourites</button>
+            <button type="button" id="apply-favourites">♡  Apply Favourites</button>
+        </div><hr>
+        <h3>Your Cart</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="total-price">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="buttons2">
+            <button type="button" id="buy-now">$ Buy Now</button>
+            <button type="button" id="reset-cart">Reset Cart</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

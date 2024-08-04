@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li id="logo">Grocies</li><br>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="#">Products</a>
+                <ul class="dropdown">
+                    <li><a href="Dairy Products.html">Dairy Products</a></li>
+                    <li><a href="Vegetables.html">Vegetables</a></li>
+                    <li><a href="Cosmetics and Skin Care.html">Cosmetics and Skincare</a></li>
+                </ul>
+                </li>
+                <li><a href="Order Page.html">Order Page</a></li>
+                <li><a href="Loyalty Registration.html">Loyalty</a></li>
+            </ul>
+        </nav>
+        <div class="loyalty-main">
+            <img src="images/loyalt page main.png" alt="">
+            <p>Welcome to our supermarket's loyalty program registration page! By joining our loyalty program, you unlock a world of exclusive benefits, rewards, and savings tailored just for you. Please fill out the form below to register and start enjoying the perks of being a valued member.</p>
+        </div>
+        <div class="schemes">
+            <h1>Our Loyalty Schemes</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th class="hnone">Benefits</th>
+                        <th class="hnone">Price</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td class="col1" data-label="program"><p>Silver</p> <br><img src="images/silver.png" alt=""></td>
+                            <td class="col2" data-label="benefits">- Earn 1 point for every Rs.100 spent! <br>- Exclusive promotions and deals! <br>- Free samples with new purchases! <br>- Priorty checking out</td>
+                            <td class="col3" data-label="price">Starting at only Rs.500 a month!</td>
+                        </tr>
+                        <tr>
+                            <td class="col1" data-label="program"><p>Gold</p> <br> <img src="images/gold.png" alt=""></td>
+                            <td class="col2" data-label="benefits">- Earn 2 points for every Rs.100 spent! <br> - Exclusive promotions and deals! <br> - Free hampers during festive seasons! <br>- Priorty checking out <br> - 2% off on orders above Rs. 10,000</td>
+                            <td class="col3" data-label="price">Rs. 1500 a month</td>
+                        </tr>
+                        <tr>
+                            <td class="col1" data-label="program"><p>Platinum</p> <br><img src="images/platinum.png" alt=""></td>
+                            <td class="col2" data-label="benefits">- Earn 3 points for every Rs.100 spent! <br>- Daily deals on selected products! <br>- Exclusive parking for members! <br>- Free hampers during festive seasons! <br>- Priortized checking out! <br>- 5% off on orders above Rs. 15,000 <br> - Free Grocies gift pack upon registering!</td>
+                            <td class="col3" data-label="price">Rs. 3000 a month</td>
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="loyalty-bg">
+            <div class="loyaltyform">
+                <h1>Loyalty Registration Form</h1>
+                    <label>First Name :</label>
+                    <input type="text" name="fname" placeholder="First Name">
+                    <label>Last Name :</label>
+                    <input type="text" name="lname" placeholder="Last Name"><br>
+                    <label>Email Address :</label>
+                    <input type="email" name="email" placeholder="Email">
+                    <label>Contact Number :</label>
+                    <input type="tel" name="mobile" placeholder="Contact Number"> <br>
+                    <label for="address">Address :</label>
+                    <textarea name="address" id="address" placeholder="Address"></textarea><br>
+                    <label for="scheme">Scheme :</label>
+                    <input type="radio"><label>Silver</label> 
+                    <input type="radio"><label>Gold</label> 
+                    <input type="radio"><label>Platinum</label> 
+                    <div class="loyaltybtn">
+                        <input type="submit" value="Register Now">
+                    </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footer-area">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email : support@grocies.com</p>
+                <p>Phone : 011-475-6675</p>
+                <p>Address : No:148, Vauxhall Street, Colombo 2, Sri Lanka. </p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="Home Page.html">Home Page</a></li>
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="Dairy Products.html">Dairy Products</a></li>
+                        <li><a href="Vegetables.html">Vegetables</a></li>
+                        <li><a href="Cosmetics and Skin Care.html">Cosmetics</a></li>
+                        <li><a href="Order Page.html">Order Page</a></li>
+                        <li><a href="Loyalty Registration.html">Loyalty Registration</a></li>
+                    </ul>    
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Grocies . All rights reserved</p>
+        </div>
+        <!--
+            REFERENCES
+            Pros and cons of reward programs for restaurants (no date) Restolabs. Available at: https://www.restolabs.com/blog/pros-and-cons-restaurant-loyalty-programs (Accessed: 23 May 2024). 
+        -->
+    </footer>
+</html>
