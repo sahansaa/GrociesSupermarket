@@ -43,7 +43,7 @@
                     <!-- Order items once added will be displayed here -->
                 </tbody>
             </table>
-            <p id="summary">TOTAL PRICE : <span id="total-price">$0.00</p>
+            <p id="summary">TOTAL PRICE : <span id="total-price">$0.00</span></p>
         </div>
         <div class="order">
             <h1 id="orderh1">Delivery Details</h1>
@@ -52,32 +52,32 @@
                     <!-- Customer Details -->
                     <fieldset class="orderfield">
                         <legend>Customer Details</legend>
-                            <label>First Name :</label>
-                                <input type="text" name="fname" placeholder="First Name" required>
-                            <label>Last Name :</label>
-                                <input type="text" name="lname" placeholder="Last Name" required><br>
-                            <label>Email Address :</label>
-                                <input type="email" name="email" placeholder="Email" required>
-                            <label>Contact Number :</label>
-                                <input type="tel" name="mobile" placeholder="Contact Number" required> <br>
+                            <label for="fname">First Name :</label>
+                                <input type="text" id="fname" placeholder="First Name" required>
+                            <label for="lname">Last Name :</label>
+                                <input type="text" id="lname" placeholder="Last Name" required><br>
+                            <label for="email">Email Address :</label>
+                                <input type="email" id="email" placeholder="Email" required>
+                            <label for="mobile">Contact Number :</label>
+                                <input type="tel" id="mobile" placeholder="Contact Number" required> <br>
                             <label for="address">Delivery Address :</label>
-                                <textarea name="address" id="address" placeholder="Delivery Address" required></textarea>
+                                <textarea id="address" id="address" placeholder="Delivery Address" required></textarea>
                     </fieldset>
                     <!-- Payment Information -->
                     <fieldset class="orderfield">
                         <legend>Payment Information</legend>
-                        <label for="">Payment Method :</label>
-                        <input type="radio" name="payment" required><label>Credit Card</label> 
-                        <input type="radio" name="payment" required><label>Debit Card</label> 
-                        <input type="radio" name="payment" required><label>Cash On Delivery</label> <br>
-                        <label for="">Card Holder's Name :</label>
-                        <input type="text" name="cholder" placeholder="Card Holder's Name" required>
-                        <label for="">Card Number :</label>
-                        <input type="text" name="cnumber" placeholder="Card Number" required><br>
-                        <label for="">Expiry Date :</label>
-                        <input type="date" name="edate" placeholder="Expiry Date" required>
-                        <label for="">CVV / CVC number :</label>
-                        <input type="text" name="cvv" placeholder="CVV" required>
+                        <label for="payment">Payment Method :</label>
+                        <input type="radio" id="payment" required><label>Credit Card</label> 
+                        <input type="radio" id="payment" required><label>Debit Card</label> 
+                        <input type="radio" id="payment" required><label>Cash On Delivery</label> <br>
+                        <label for="cholder">Card Holder's Name :</label>
+                        <input type="text" id="cholder" placeholder="Card Holder's Name" required>
+                        <label for="cnumber">Card Number :</label>
+                        <input type="text" id="cnumber" placeholder="Card Number" required><br>
+                        <label for="edate">Expiry Date :</label>
+                        <input type="date" id="edate" required>
+                        <label for="cvv">CVV / CVC number :</label>
+                        <input type="text" id="cvv" placeholder="CVV" required>
                     </fieldset>
                     <div class="formbtn">
                         <input type="reset" name="reset" value="Reset Form">
@@ -87,7 +87,6 @@
             </div>
         </div>
         <script src="script2.js"></script>
-    </body>
     <footer>
         <div class="footer-area">
             <div class="footer-content">
@@ -113,4 +112,5 @@
             <p>&copy; 2024 Grocies . All rights reserved</p>
         </div>
     </footer>
+</body>
 </html>
