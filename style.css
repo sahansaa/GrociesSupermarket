@@ -1367,6 +1367,15 @@ option {
   color: #3d5347;
   border: 1px solid #000000;
 }
+@media screen and (max-width: 600px) {
+  .loyaltyform input, textarea {
+    padding: 5px;}
+  
+  .loyaltyform{
+    width: 90%;
+    margin-left: 3%;
+  }
+}
 
 /* footer */
 footer {
