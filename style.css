@@ -1323,6 +1323,7 @@ option {
 
 .loyalty-bg {
   background-image: url(images/order/bg6.png);
+  padding: 40px;
 }
 .loyaltyform h1{
   text-align: center;
@@ -1332,13 +1333,11 @@ option {
   text-transform: uppercase;
 }
 .loyaltyform{
-  margin-top: 2%;
   background-color: #F6F5F2;
   border: 1px solid #3d5347;
-  margin-bottom: 4%;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-right: 10%;
-  width: 70%;
+  width: 80%;
   padding: 20px 40px;
 }
 .loyaltyform label{
