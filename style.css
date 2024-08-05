@@ -856,15 +856,15 @@ nav ul li {
   background-color: #3d5347;
   padding: 20px;
   color: #eff3ed;
-  font-size: 1vw;
+  font-size: 14px;
 }
 
 .services tfoot td {
   color: #444;
-  font-size: 1vw;
+  font-size: 14px;
 }
 .services tbody td {
-  font-size: 1vw;
+  font-size: 14px;
   padding: 30px;
   position: relative;
 }
