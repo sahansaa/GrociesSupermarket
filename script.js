@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             function applyFavourites() {
-                const favourites = JSON.parse(localStorage.getItem('favourites') || '{}');
+                const favourites = JSON.parse(localStorage.getItem('Favourites'));
                 Object.keys(favourites).forEach(item => {
                     try {
                         document.getElementById(item).value = favourites[item];
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 updateCart();
             }
+            
 
             function resetCart() {
                 Object.keys(items).forEach(item => {
