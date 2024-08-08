@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const favourites = JSON.parse(localStorage.getItem('Favourites'));
             
                 if (!favourites || Object.keys(favourites).length === 0) {
-                    alert('No favorites has been added.');
+                    alert('No favorites has been saved.');
                 } else {
                     applyFavourites();
                 }
