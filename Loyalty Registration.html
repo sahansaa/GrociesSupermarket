@@ -64,25 +64,32 @@
         </div>
         <div class="loyalty-bg">
             <div class="loyaltyform">
-                <h1>Loyalty Registration Form</h1>
-                    <label>First Name :</label>
-                    <input type="text" name="fname" placeholder="First Name">
-                    <label>Last Name :</label>
-                    <input type="text" name="lname" placeholder="Last Name"><br>
-                    <label>Email Address :</label>
-                    <input type="email" name="email" placeholder="Email">
-                    <label>Contact Number :</label>
-                    <input type="tel" name="mobile" placeholder="Contact Number"> <br>
-                    <label for="address">Address :</label>
-                    <textarea name="address" id="address" placeholder="Address"></textarea><br>
-                    <label>Scheme :</label>
-                    <input type="radio"><label>Silver</label> 
-                    <input type="radio"><label>Gold</label> 
-                    <input type="radio"><label>Platinum</label> 
-                    <div class="loyaltybtn">
-                        <input type="submit" value="Register Now">
-                    </div>
+                <h1>Loyalty Registration Form</h1>               
+                <label for="fname">First Name :</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name">                
+                <label for="lname">Last Name :</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br>                
+                <label for="email">Email Address :</label>
+                <input type="email" id="email" name="email" placeholder="Email">               
+                <label for="mobile">Contact Number :</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Contact Number"><br>                
+                <label for="address">Address :</label>
+                <textarea id="address" name="address" placeholder="Address"></textarea><br>               
+                <fieldset>
+                    <legend>Scheme :</legend>                    
+                    <input type="radio" id="silver" name="scheme" value="Silver">
+                    <label for="silver">Silver</label>                   
+                    <input type="radio" id="gold" name="scheme" value="Gold">
+                    <label for="gold">Gold</label>                   
+                    <input type="radio" id="platinum" name="scheme" value="Platinum">
+                    <label for="platinum">Platinum</label>
+                </fieldset>
+                
+                <div class="loyaltybtn">
+                    <input type="submit" value="Register Now">
+                </div>
             </div>
+            
         </div>
     <footer>
         <div class="footer-area">
