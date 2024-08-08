@@ -67,9 +67,12 @@
                     <fieldset class="orderfield">
                         <legend>Payment Information</legend>
                         <label>Payment Method :</label>
-                        <input type="radio" required><label>Credit Card</label> 
-                        <input type="radio" required><label>Debit Card</label> 
-                        <input type="radio" required><label>Cash On Delivery</label> <br>
+                        <input type="radio" id="credit-card" name="payment" value="Credit Card" required>
+                        <label for="credit-card">Credit Card</label>                        
+                        <input type="radio" id="debit-card" name="payment" value="Debit Card" required>
+                        <label for="debit-card">Debit Card</label>                       
+                        <input type="radio" id="cash-on-delivery" name="payment" value="Cash On Delivery" required>
+                        <label for="cash-on-delivery">Cash On Delivery</label><br>
                         <label for="cholder">Card Holder's Name :</label>
                         <input type="text" id="cholder" placeholder="Card Holder's Name" required>
                         <label for="cnumber">Card Number :</label>
