@@ -324,7 +324,7 @@ nav ul li {
   .section3 .section3-text {
     width: 100%;
     margin: 0;
-    margin-top: -65%;
+    margin-top: -45%;
     margin-bottom: 0;
     margin-left: 0%;
     margin-right: 0%;
@@ -431,7 +431,7 @@ nav ul li {
 }
 
 .flex-box .flex-container .flex-item p{
-  color:#777;
+  color:#333333;
   font-size: 12px;
   line-height: 1.8;
   text-align: center;
