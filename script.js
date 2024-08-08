@@ -47,17 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             function applyFavourites() {
-                const favourites = JSON.parse(localStorage.getItem('Favourites'));
-                Object.keys(favourites).forEach(item => {
-                    try {
-                        document.getElementById(item).value = favourites[item];
-                    } catch (e) {
-                        console.error(`Error applying favourite for item ${item}:`, e);
-                        alert(`Unable to apply favourite for item ${item}.`);
-                    }
-                });
-                updateCart();
+                const favourites = JSON.parse(localStorage.getItem('Favourites'));               
+                if (favourites) {
+                    Object.keys(favourites).forEach(item => {
+                        try {
+                            document.getElementById(item).value = favourites[item];
+                        } catch (e) {
+                            console.error(`Error applying favourite for item ${item}:`, e);
+                            alert(`Unable to apply favourite for item ${item}.`);
+                        }
+                    });
+                    updateCart();
+                }
             }
+            
             
 
             function resetCart() {
@@ -105,8 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
             applyFavBtn.addEventListener('click', event => {
                 event.preventDefault();
-                applyFavourites();
+                const favourites = JSON.parse(localStorage.getItem('Favourites'));
+            
+                if (!favourites || Object.keys(favourites).length === 0) {
+                    alert('No favorites has been added.');
+                } else {
+                    applyFavourites();
+                }
             });
+            
 
             buyNowBtn.addEventListener('click', event => {
                 event.preventDefault();
